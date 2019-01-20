@@ -13,69 +13,181 @@
   </head>
   <body>
     
-<nav class="navbar is-transparent">
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
+<nav class="navbar is-dark">
+  <div id="navbarExampleTransparentExample" class="navbar-menu is-dark">
     <div class="navbar-start">
       <a class="navbar-item" href="/">
-        Home
+        <i class="fa fa-home"></i>󠀀 Home
       </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
-          <i class="fa fa-rocket"></i> Discord Server
-        </a>
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-            Overview
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-            Modifiers
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-            Columns
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-            Layout
-          </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-            Form
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-            Elements
-          </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-            Components
-          </a>
-        </div>
-      </div>
+      <a class="navbar-item" href="https://discord.gg/PRReTN">
+          <i class="fa fa-rocket"></i>󠀀<strong󠀀>󠀀 󠀀Discord</strong>
+      </a>
+      <a class="navbar-item" href="https://discordapp.com/oauth2/authorize?client_id=488805846499721216&scope=bot&permissions=1546938623">
+        <i class="fa fa-heart"></i>󠀀 Invite
+      </a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="field is-grouped">
-          <p class="control">
-            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
-              <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-              <span>
-                Tweet
-              </span>
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.2/bulma-0.7.2.zip">
-              <span class="icon">
-                <i class="fas fa-download"></i>
-              </span>
-              <span>Download</span>
-            </a>
-          </p>
-        </div>
-      </div>
+     <div class="navbar-end">
+     <a class="navbar-item" href="https://paypal.me/santipixd">
+      <i class="fa fa-paper-plane"></i>  Donate
+    </a>
     </div>
   </div>
+  <style>
+.has-bg-img { background: url('https://i.imgur.com/UWg6lfm.png')center center; background-size:cover; }
+.nydea {
+  font-size: 72px;  
+  background: -webkit-linear-gradient(left top, blue, cyan);
+  background: linear-gradient(to bottom right, blue, cyan);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+}
+  </style>
+  <script>
+  var text = $(".split");
+
+var split = new SplitText(text);
+
+function random(min, max){
+	return (Math.random() * (max - min)) + min;
+}
+
+$(split.chars).each(function(i){
+	TweenMax.from($(this), 2.5, {
+		opacity: 0,
+		x: random(-500, 500),
+		y: random(-500, 500),
+		z: random(-500, 500),
+		scale: .1,
+		delay: i * .02,
+		yoyo: true,
+		repeat: -1,
+		repeatDelay: 10
+	});
+});
+  </script>
 </nav>
+<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+<section class="hero is-medium has-bg-img"> 
+  <div class="hero-body"> 
+    <div class="container has-text-centered"> 
+  <h1 class="title has-text-white nydea" style="font-family: 'Archivo', sans-serif;filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.65));">Nydea</h1>
+   <h2 class="subtitle has-text-white" style="font-family: 'Archivo', sans-serif">Nydea is a powerful bot that provides into your Discord Server, <strong class="has-text-white">Fun, NSFW, Moderation, Administration, Utility, Information, Social, Economy</strong> and many more things! Nydea is totally configurable, ¿Maybe you wish test it now?</h2>
+   </div>
+   <br>
+   <center>
+   <a class="button is-link is-medium" style="filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.65));">
+    <i class="fa fa-inbox"></i>󠀀 Invite
+   </a>
+   <a class="button is-primary is-medium" style="filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.65));">
+      <i class="fa fa-server"></i>󠀀 Discord Server
+     </a>
+  </center>
+  </div>
+ </section>
+<!-- something -->
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <style>
+      .has-text-muted {
+        color: #767676
+      }</style>
+      <center>
+        <div class="columns">
+            <div class="column">
+              <i class="fa fa-bolt fa-5x"></i><br>
+              <h1 class="title" style="font-family: 'Archivo', sans-serif">Moderation</h1>
+              <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">Everyone know that if your server isn't with security could be hacked, raided, or spammed. And <strong>Nydea</strong> try to make your server secure with a lot of commands of moderation, and configuration to make your server a great place.</small>
+            </div>
+            <div class="column">
+                <i class="fa fa-cogs fa-5x"></i><br>
+                <h1 class="title" style="font-family: 'Archivo', sans-serif">Configuration</h1>
+                <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">Nydea's like improve anything. With <storng>Nydea</storng> you can configure your server with amazing things like <strong>Auto Roles</strong>, <strong>Moderation Logs</strong> and <strong>Greetings Settings</strong>.</small>
+            </div>
+            <div class="column">
+                <i class="fa fa-star fa-5x"></i><br>
+                <h1 class="title" style="font-family: 'Archivo', sans-serif">¿Feel Alone?</h1>
+                <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">If you feel alone, Nydea have the perfect commands to make you laugh. Nydea have more than 20 funny commands, NSFW, Images and many more. Enjoy our funny commands!</small>
+            </div>
+            <div class="column">
+                <i class="fa fa-user fa-5x"></i><br>
+                <h1 class="title" style="font-family: 'Archivo', sans-serif">Support</h1>
+                <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">If you have any issue, problem or mistake doing something you can join our Discord Support to start a ticket with one of our staff. You can get supported very easy and in fast time!</small>
+            </div>
+          </div>
+  </center>
+  <hr style="background-color:#2C2F33;color:#2C2F33;">
+  <h1 class="title has-text-centered" style="font-size: 60px;font-family: 'Archivo', sans-serif">Features</h1>
+  <center>
+      <div class="columns">
+          <div class="column">
+            <i class="fa fa-cloud fa-5x"></i><br>
+            <h1 class="title" style="font-family: 'Archivo', sans-serif">99% Uptime</h1>
+            <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">Nydea will be online forever, but sometimes you will see Nydea offline, that happen because we are working in a new update to you, our users.</small>
+          </div>
+          <div class="column">
+              <i class="fa fa-heart fa-5x"></i><br>
+              <h1 class="title" style="font-family: 'Archivo', sans-serif">We hear us</h1>
+              <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">If you want give us feedback, new ideas or something related you can use our commands, to give feedback just use <code>ny! feedback (message)</code></small>
+          </div>
+          <div class="column">
+              <i class="fa fa-credit-card fa-5x"></i><br>
+              <h1 class="title" style="font-family: 'Archivo', sans-serif">No payments</h1>
+              <small class="has-text-muted" style="font-family: 'Archivo', sans-serif">You will not need to buy something to use Nydea's Commands. You can use all our commands and every command is free, you don't need pay, you don't need wait a long cooldown like wait 5 seconds per command and specially you don't need vote for Nydea to use any kind of command.</small>
+          </div>
+        </div>
+</center>
+        
+  </div></div>
+
+</section>
+<style>
+.lem {
+  font-family: 'Archivo', sans-serif;
+  color: white
+}
+</style>
+<div class="footer is-medium has-bg-img">
+  <div class="footer-body">
+    <div class="columns">
+      <div class="column is-3">
+      <figure class="image is-128x128">
+          <img src="https://i.imgur.com/FQs1O6E.png" height="10px;">
+    </figure>
+  </div>
+  <div class="column is-10">
+      <a href="https://bots.ondiscord.xyz/bots/488805846499721216"><img src="https://bots.ondiscord.xyz/bots/488805846499721216/embed" alt="Nydea" style="filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.65));" /></a>
+      <a href="https://botsfordiscord.com/bots/488805846499721216"><img src="https://botsfordiscord.com/api/bot/488805846499721216/widget" alt="Nydea" style="filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.65));"/></a>
+  </div>
+  </div>
+  <hr style="background-color:white;  background: -webkit-linear-gradient(left top, blue, cyan);
+  background: linear-gradient(to bottom right, blue, cyan);">
+      <center>
+  <div class="columns" style="color:white;">
+<link rel="stylesheet" href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css">
+    <div class="column">
+      <h1 class="title lem">Contact</h1>
+      <small class="has-text-muted lem"><i class="fab fa-twitter"></i> @imsantiagodev</small><br>
+      <small class="has-text-muted lem"><i class="fab fa-discord"></i> Santiago#0001</small>
+    </div>
+    <div class="column">
+        <h1 class="title lem">Links</h1>
+        <a href="https://discord.gg/jmnzWFY"><small class="has-text-muted lem"><i class="fab fa-discord"></i> Discord Server</small></a><br>
+        <a href="https://discordapp.com/oauth2/authorize?client_id=488805846499721216&scope=bot&permissions=1546938623"><small class="has-text-muted lem" style="color:white;"><i class="fas fa-sliders-h"></i> Invite Me</small></a><br>
+        <a href="https://discord.gg/PGnrft3"><small class="has-text-muted lem"><i class="fas fa-handshake"></i> Developers Zone</small></a>
+      </div>
+      <div class="column">
+          © Copyright 2019 - 2020 <strong class="lem">Santiago</strong> - All Rights Reserved<br>
+          <a href="https://discord.gg/CS287w6"><i class="fab fa-discord icon is-medium lem"></i></a>
+          <a href="https://twitter.com/@imsantiagodev"><i class="fab fa-twitter icon is-medium lem"></i></a>
+          <a href="https://paypal.me/santipixd"><i class="fab fa-paypal icon is-medium lem"></i></a>
+        </div>
+    
+  </div>
+</center>
+  </div>
+  </div>
     
   </body>
 </html>
